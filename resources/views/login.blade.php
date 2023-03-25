@@ -40,12 +40,12 @@
             <form action="#" class="form-login">
                 @csrf
                 <label for="user" class="form-login-label">
-                    <span>Email ou número de telefone</span>
                     <input type="text" name="user" class="form-login-input">
+                    <span>Email ou número de telefone</span>
                 </label>
                 <label for="password" class="form-login-label">
-                    <span>Senha</span>
                     <input type="password" name="password" class="form-login-input">
+                    <span>Senha</span>
                     <button class="btn">Mostrar</button>
                 </label>
                 <button type="submit" class="form-login-btn">Entrar</button>
