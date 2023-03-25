@@ -39,17 +39,31 @@
             <h1 class="login-title">Entrar</h1>
             <form action="#" class="form-login">
                 @csrf
-                <label for="user" class="form-login-label">
-                    <input type="text" name="user" class="form-login-input">
-                    <span>Email ou número de telefone</span>
-                </label>
-                <label for="password" class="form-login-label">
-                    <input type="password" name="password" class="form-login-input">
-                    <span>Senha</span>
-                    <button class="btn">Mostrar</button>
-                </label>
+                <div class="label-float">
+                <input type="text" placeholder=" "/>
+                <label>Email ou número de telefone</label>
+                </div>
+                <br/>
+                <div class="label-float">
+                <input type="password" placeholder=" " required/>
+                <label>Senha</label>
+                </div>
                 <button type="submit" class="form-login-btn">Entrar</button>
+                <div class="footer-form">
+                    <span class="footer-form-remember">
+                        <input type="checkbox" name="remember" id="remember">Lembrar-se de mim
+                    </span>
+                    <span class="footer-form-help">
+                        <a href="#">Precisa de ajuda?</a>
+                    </span>
+                </div>
             </form>
+
+            <div class="login-signup">
+                <h2>Novo por aqui? <a href="#">Assine agora.</a></h2>
+                <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+            </div>
+
         </section>
     </section>
     <footer class="opacidade-40">

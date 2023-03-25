@@ -19,22 +19,116 @@
 .box-login{
     background: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
-    padding: 30px 30px;
+    padding: 70px 30px;
     width: 30%;
+    border-radius: 5px;
+    margin-bottom: 70px;
 }
 
 .login-title{
     font-size: 20px;
-    color: #fff;
+    color: #fff;    
 }
 .form-login{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.form-login-label{
-    background: #656565;
-    color: #fff;
-    margin-top: 20px;
+
+.label-float{
     position: relative;
-}
+    padding: 13px 5px;    
+    background-color: #8c8b8b;
+    border-radius: 5px;
+    height: 40px;
+  }
+  
+  .label-float input{
+    border: 0;    
+    outline: none;
+    background-color: transparent;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius:0;
+    width: 100%;
+  }
+  
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    font-size: 20px;
+  }
+  
+  .label-float input:required:invalid + label{
+    color: #000;
+  }
+  
+ 
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #000;
+  }
+
+  .form-login-btn{
+    padding: 20px 0;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #c91010;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .footer-form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 5px;
+  }
+  .footer-form-remember{    
+    color: #8c8b8b;
+  }
+  .footer-form-help{
+    align-items: end;    
+  }
+
+  .footer-form-help a{
+    text-align: end;
+  }
+
+  .login-signup{
+    margin-top: 60px;
+  }
+
+  .login-signup h2{
+    font-size: 20px;
+    color: #8c8b8b;
+  }
+
+  .login-signup h2 a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .login-signup p{
+    color: #8c8b8b;
+    font-size: 13px;
+  }
