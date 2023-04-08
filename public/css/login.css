@@ -19,8 +19,8 @@
 .box-login{
     background: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
-    padding: 70px 30px;
-    width: 30%;
+    padding: 70px 60px;
+    width: 350px;
     border-radius: 5px;
     margin-bottom: 70px;
 }
@@ -112,6 +112,8 @@
 
   .footer-form-help a{
     text-align: end;
+    text-decoration: none;
+    color: #8c8b8b;
   }
 
   .login-signup{
@@ -132,3 +134,4 @@
     color: #8c8b8b;
     font-size: 13px;
   }
+  

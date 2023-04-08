@@ -40,7 +40,7 @@
                                <path d="M12 15l-4 -4h8z"></path>
                             </svg>
                         </button></li>
-                    <li><a href="{{route('login')}}" class="btn-login">Entrar</a> </li>
+                    <li><a href="/login" class="btn-login">Entrar</a> </li>
                 </ul>
             </div>
         </header>
